@@ -11,6 +11,9 @@ class SquareMeterConversionViewController: UIViewController {
 
     @IBOutlet weak var result: UILabel!
     @IBOutlet weak var square: UITextField!
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -10,6 +10,9 @@ import UIKit
 class TsuboConversionViewController: UIViewController {
     @IBOutlet weak var tsubo: UITextField!
     @IBOutlet weak var result: UILabel!
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
